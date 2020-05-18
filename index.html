@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href=".\Style\styles.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="table.js"></script>
+   <script type="text/javascript" src="validations.js"></script>
+   <script type="text/javascript" src="export.js"></script>
+   <script type="text/javascript" src="md5.js"></script>
+   <script type="text/javascript" src="data.json"></script>
+   <script type="text/javascript" src="messageDigit.js"></script>
+   <script type="text/javascript" src="modal.js"></script>
+   <title>Generator Elixir</title>
+
+</head>
+<body>
+      <!--------------------- UPPER ---- SECTION -------------------------------------------------------------------------------------------------------------------->
+      <div id="Session">
+             <p>Session</p>
+             <select type="text" name="Session" class="Session custom-select" >
+                <option value='01'>01</option>
+                <option value='02'>02</option>
+                <option value='03'>03</option>
+             </select>
+      </div>
+      <div id="Priority">
+             <p>Priority</p>
+             <select type="text" name="Priority" id="Priority custom-select" style="width:110">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+             </select>
+      </div>
+      <div id="sumID">
+             <p>Records</p>
+             <div id="sum">1</div>
+      </div>
+      <!--------------------------------- MAIN ------------------------------------------------------------------------------------------------------------------------>
+      <table id="myTable" class="table order-list table-hover ">
+      <thead>
+         <tr>
+            <td>Index</td>
+            <td>Message</td>
+            <td>Date</td>
+            <td>Amount</td>
+            <td>Branch</td>
+            <td>Branch2</td>
+            <td>SNDNRB</td>
+            <td>BNFNRB</td>
+            <td>Sender name</td>
+            <td>Benef name</td>
+            <td>Sender no2</td>
+            <td>Benef no2</td>
+            <td>Additional info</td>
+            <td>Additional Id</td>
+            <td>Cheque</td>
+            <td>Claim</td>
+            <td>Interbank info</td>
+            <td>Input values</td>
+            <td>Output values</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr id="1" onclick="modal(this)" name = "table" scope="row" class="tr">
+           <td class="col index" >
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+<!---------------------------Beginning---- modal ---- Box ------------------------------------------------------------------------------------------------------>
+            <button type="button" id="record" data-toggle="modal" data-target="#modalCart">1</button>
+               <div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                 <div class="modal-dialog" role="document">
+                   <div class="modal-content">
+                     <!---------------------------------------------Header-------------------------------------------------------------------------------------->
+                     <div class="modal-header">
+                       <h4 class="modal-title" id="myModalLabel">Modal box</h4>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">×</span>
+                       </button>
+                     </div>
+                     <!-----------------------------------------Modal----Body--------------------------------------------------------------------------------->
+                     <div class="body">
+
+                       <table class="table table-hover">
+                            <tbody class="modal2">
+                              <tr>
+                                <td>Message </td>
+                                <td><select type="text" name="import Message" class="import Message custom-select" style="width:110">
+                                          <option value='11'>Message1</option>
+                                          <option value='12'>Message2</option>
+                                          <option value='13'>Message3</option>
+                                          <option value='14'>Message4</option>
+                                          <option value='15'>Message5</option>
+                                       </select>
+                                 </td>
+                              </tr>
+                              <tr>
+                                <td>Date</td>
+                                <td><input type="text" name="import Date" class="import Date" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Amount</td>
+                                <td><input type="text" name="import Amount" class="import Amount" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Branch</td>
+                                <td><input type="text" name="import Branch" class="import Branch" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Branch2</td>
+                                <td><input type="text" name="import Branch2" class="import Branch2" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>SNDNRB</td>
+                                <td><input type="text" name="import SNDNRB" class="import SNDNRB" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>BNFNRB</td>
+                                <td><input type="text" name="import BNFNRB" class="import BNFNRB" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Sender_name</td>
+                                <td><input type="text" name="import Sender_name" class="import Sender_name" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Benef_name</td>
+                                <td><input type="text" name="import Benef_name" class="import Benef_name" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Sender_no_2</td>
+                                <td><input type="text" name="import Sender_no_2" class="import Sender_no_2" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Benef_no_2</td>
+                                <td><input type="text" name="import Benef_no_2" class="import Benef_no_2" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Add_info</td>
+                                <td><input type="text" name="import Add_info" class="import Add_info" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Additional Id</td>
+                                <td><input type="text" name="import Add_id" class="import Add_Id" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Cheque</td>
+                                <td><input type="text" name="import Cheque" class="import Cheque" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                <td>Claim</td>
+                                <td><input type="text" name="import Claim" class="import Claim" style="width:90" /></tr>
+                              </tr>
+                              <tr>
+                                 <td>Inter_bank_info</td>
+                                 <td><input type="text" name="import Inter_bank_info" class="import Inter_bank_info" style="width:90" /></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                     </div>
+                     <!--------------------Modal----Footer--------------------------------------------------------------------------->
+                     <div class="footer">
+                       <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                       <button class="btn btn-primary">Save</button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+ <!----------------------- End----Of----Modal----Box --------------------------------------------------------------------------------------------------->
+ <!--------------------------------------------------------------------------------------------------------------------------------------------------------->
+           </td>
+           <td class="col" >
+               <select type="text" onclick="validateRequired()" name="Message" class="export Message custom-select" style="width:110">
+                  <option value='11'>Przelew przychodz±cy</option>
+                  <option value='11'>Uznanie czekiem rozliczeniowym</option>
+                  <option value='11'>Wp³ata gotówkowa zwyk³a</option>
+                  <option value='11'>Wp³ata gotówkowa US</option>
+                  <option value='11'>Przelew przychodz±cy SORBNET</option>
+                  <option value='19'>Zwrot przelewu</option>
+                  <option value='19'>Zwrot uznania czekiem rozliczeniowym</option>
+                  <option value='19'>Zwrot wp³aty gotówkowej zwyk³ej</option>
+                  <option value='19'>Zwrot wp³aty gotówkowej US</option>
+                  <option value='21'>Polecenie zap³aty</option>
+                  <option value='22'>Obci±¿enie czekiem gotówkowym</option>
+                  <option value='22'>Obci±¿enie czekiem rozliczeniowym</option>
+               </select>
+               <div class="MessageDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Date" class="export Date" style="width:90" />
+               <div class="DateDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Amount" class="export Amount" style="width:100"/>
+               <div class="AmountDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Branch" class="export Branch" style="width:110"/>
+               <div class="BranchDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Branch2" class="export Branch2" style="width:110"/>
+               <div class="Branch2Div"></div>
+            </td>          
+            <td class="col">
+               <input type="text" name="SNDNRB" class="export SNDNRB" style="width:240"/>
+               <div class="SNDNRBDiv"></div>
+            </td>          
+            <td class="col">
+               <input type="text" name="BNFNRB" class="export BNFNRB" style="width:240"/>
+               <div class="BNFNRBDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Sender_name" class="export Sender_name" style="width:110"/>
+               <div class="Sender_nameDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Benef_name" class="export Benef_name" style="width:110"/>
+               <div class="Benef_nameDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Sender_no_2" class="export Sender_no_2" style="width:110"/>
+               <div class="Sender_no_2Div"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Benef_no_2" class="export Benef_no_2" style="width:110" />
+               <div class="Benef_no_2Div"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Add_Id" class="export Add_Id" style="width:210"/>
+               <div class="Add_IdDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Cheque" class="export Cheque" style="width:150"/>
+               <div class="ChequeDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Claim" class="export Claim" style="width:150"/>
+               <div class="ClaimDiv"></div>
+            </td>
+            <td class="col">
+               <input type="text" name="Add_info" class="export Add_info" style="width:210"/>
+               <div class="Add_infoDiv"></div>
+            </td>
+            <td type="col">
+               <input type="text" name="export Inter_bank_info" class="export Inter_bank_info" style="width:90" />
+               <div class="Inter_bank_infoDiv"></div>
+            </td>
+            <td type="col">
+                <input type="text" name="export inputVal" class="export inputVal" />
+            </td> 
+            <td type="col">
+                <input type="text" name="export outputVal" class="export outputVal" />
+            </td>
+            <td>
+               <input type="button" class="ibtnDel btn btn-md btn-danger" value="Delete"></td>
+               <td class="col"><a class="deleteRow"></a>
+            </td>
+         </tr>
+      </tbody>
+      <!--------------------------------- BENEATH ---- TABLE ---- BUTTONS ----------------------------------------------->
+      <tfoot>
+         <tr>
+            <td colspan="1" style="text-align: left;">
+               <input type="button" class="btn btn-lg btn-block btn-primary" id="addrow" value="Add Row" />
+            </td>
+            <td colspan="1" style="text-align: left;">
+               <button onclick="validate()" class="btn btn-lg btn-block btn-primary" id="check" value="Check">Check</button>
+            </td>
+            <!--
+            <td colspan="1" style="text-align: left;">
+               <button onclick="#" class="btn btn-lg btn-block btn-primary" id="load" value="Load">Defaults</button>
+            </td>-->        
+            <td colspan="1" style="text-align: left;">
+               <button type="button" onclick="exportTableToTxt('X.txt')" class="btn btn-lg btn-block btn-primary" id="download" value="download">Download</button>
+            </td>
+         </tr>
+         <tr>
+         </tr>
+      </tfoot>
+   </table>
+   <footer>
+   <h4 style="margin-bottom:20px; margin-top:50px">Legend:</h4>
+   <div style="float:left;">
+      <p>Required</p>
+      <div style="border: solid 1px; border-color:#FF0000;width:100px; height:30px; margin-right:20px;"></div>
+   </div>
+   <div style="float:left;">
+      <p>Optional</p>
+      <div style="border: solid 1px; border-color:#009218; width:100px; height:30px; margin-right:20px;"></div> 
+   </div>
+   <div style="float:left;">
+      <p>Not allowed</p>
+      <div style="border: solid 1px; border-color:#000000; width:100px; height:30px; margin-right:20px;"></div> 
+   </div>
+   <div style="float:left;">
+      <p>Not usable</p>
+      <div style="border: solid 1px; background-color:#000000; width:100px; height:30px; margin-right:20px;"></div>
+   </div>
+   </footer>
+</body>
+</html>

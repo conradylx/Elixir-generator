@@ -1,0 +1,56 @@
+html, body{
+         position:relative;
+         top:0;
+         bottom:0;
+         left:15px;
+         right:0;
+}
+#Session{
+         width:100px;
+         margin-top:10px;
+         margin-left: 10px;
+         margin-bottom: 20px;
+         float:left;
+}
+#Priority{
+         width:100px;
+         margin-top:10px;
+         margin-left: 20px;
+         margin-bottom: 20px;
+         float:left;
+}
+#sumID{
+         width:100px;
+         margin-top:10px;
+         margin-left: 20px;
+         margin-bottom: 20px;
+         float:left;
+}
+#sum{
+        width: 55px;
+        border: solid  0.5px silver;
+        height: 20px;
+        text-align: center;
+}
+#myTable{
+        border-top: 1px groove grey;
+        box-shadow: 0 1px 0
+}
+.col .ID{
+        border-right: -50px;
+}
+/*td .col .index{
+        max-width: 60px;
+}*/
+td #record{
+        width: 105px;
+        border: solid  0.5px silver;
+        height: 20px;
+        text-align: center;
+}
+.idRecord{
+        width: 30px;
+        border: solid  0.5px silver;
+        height: 20px;
+        text-align: center;
+}

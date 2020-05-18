@@ -1,0 +1,209 @@
+const JSONdata= '{'+
+   '"structure_id" : "ELIXIR",'+
+   '"structure_type": "view",'+
+   '"field": ['+
+      '{'+
+		   '"Id": "0",'+
+         '"field_name": "Session",'+
+         '"field_type": "select",'+
+         '"title": "Session",'+
+         '"length": "9",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "Session 1",'+
+         '"mask": ""'+
+      '},'+
+      '{'+
+		   '"Id": "1",'+
+         '"field_name": "Priority",'+
+         '"field_type": "select",'+
+         '"title": "Priority",'+
+         '"length": "3",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "No",'+
+         '"mask": ""'+
+      '},'+
+      '{'+
+		   '"Id": "2",'+
+         '"field_name": "Message",'+
+         '"field_type": "select",'+
+         '"title": "Message",'+
+         '"length": "3",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": "111",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+	    	'"Id": "3",'+
+         '"field_name": "Date",'+
+         '"field_type": "input",'+
+         '"title": "Date",'+
+         '"length": "8",'+
+         '"type": "9",'+
+         '"subtype": "D",'+
+         '"default": "20200101",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "4",'+
+         '"field_name": "Amount",'+
+         '"field_type": "input",'+
+         '"title": "Amount",'+
+         '"length": "7",'+
+			'"min_value": "1",'+
+         '"max_value": "5000000",'+
+         '"type": "9",'+
+         '"subtype": "A",'+
+         '"default": "10000",'+
+         '"mask": "9*,99"'+
+      '},'+
+      '{'+
+		   '"Id": "5",'+
+         '"field_name": "Sender Branch",'+
+         '"field_type": "input",'+
+         '"title": "Numer jednostki prezentujacej",'+
+         '"length": "8",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": "11401603",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "6",'+
+         '"field_name": "Benef Branch",'+
+         '"field_type": "input",'+
+         '"title": "Numer jednostki odbierajacej",'+
+         '"length": "8",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": "10200029",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "7",'+
+         '"field_name": "Sender Account",'+
+         '"field_type": "input",'+
+         '"title": "Rachunek nadawcy",'+
+         '"length": "26",'+
+         '"type": "X",'+
+         '"subtype": "N",'+
+         '"default": "78114016030000101234560000",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "8",'+
+         '"field_name": "Benef Account",'+
+         '"field_type": "input",'+
+         '"title": "Rachunek odbiorcy",'+
+         '"length": "26",'+
+         '"type": "X",'+
+         '"subtype": "N",'+
+         '"default": "32102000290000390200000026",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "9",'+
+         '"field_name": "Sender Name",'+
+         '"field_type": "input",'+
+         '"title": "Nazwa nadawcy",'+
+         '"length": "140",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "Jan Kolwalski",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "10",'+
+         '"field_name": "Benef Name",'+
+         '"field_type": "input",'+
+         '"title": "Nazwa odbiorcy",'+
+         '"length": "140",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "Janusz Nowak",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "11",'+
+         '"field_name": "SND Indirect Branch",'+
+         '"field_type": "input",'+
+         '"title": "Numer nadawcy uczestnika posredniego",'+
+         '"length": "8",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": "11401603",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "12",'+
+         '"field_name": "BNF Indirect Branch",'+
+         '"field_type": "input",'+
+         '"title": "Numer oddzialu (finalny) adresata",'+
+         '"length": "8",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": "10200029",'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "13",'+
+         '"field_name": "Info",'+
+         '"field_type": "input",'+
+         '"title": "Info dodatkowe",'+
+         '"length": "140",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "Tytuł",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "14",'+
+         '"field_name": "Cash check",'+
+         '"field_type": "input",'+
+         '"title": "Numer czeku",'+
+         '"length": "10",'+
+         '"type": "9",'+
+         '"subtype": [],'+
+         '"default": [],'+
+         '"mask": "9*"'+
+      '},'+
+      '{'+
+		   '"Id": "15",'+
+         '"field_name": "Complaint",'+
+         '"field_type": "input",'+
+         '"title": "Szczegoly reklamacji",'+
+         '"length": "140",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": [],'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "16",'+
+         '"field_name": "Add Id",'+
+         '"field_type": "input",'+
+         '"title": "Dodatkowa identyfikacja",'+
+         '"length": "34",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": "51",'+
+         '"mask": "X*"'+
+      '},'+
+      '{'+
+		   '"Id": "17",'+
+         '"field_name": "Interbank Info",'+
+         '"field_type": "string",'+
+         '"type_id": "txt",'+
+         '"title": "Informacje miedzybankowe",'+
+         '"length": "210",'+
+         '"type": "X",'+
+         '"subtype": [],'+
+         '"default": [],'+
+         '"mask": "X*"'+
+      '}'+
+   ']'+
+'}';
+
+let text2 = JSON.parse(JSONdata);
