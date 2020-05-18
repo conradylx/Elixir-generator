@@ -8,12 +8,12 @@ $(document).ready(function () {
         var cols = "";
 
         cols += '<td type="col"><button type="button" id="record" data-toggle="modal" data-target="#modalCart">'+id+'</button></td>'
-        cols += '<td type="col"><select type="text" class="export Message custom-select" name="Message" style="width:110"><option value=11>Przelew przychodz眂y</option>'+
-                    '<option value=11>Uznanie czekiem rozliczeniowym</option><option value=11>Wp砤ta got體kowa zwyk砤</option><option value=11>Wp砤ta got體kowa US</option>'+
-                    '<option value=11>Przelew przychodz眂y SORBNET</option>'+
-                    '<option value=19>Zwrot przelewu</option><option value=19>Zwrot uznania czekiem rozliczeniowym</option><option value=19>Zwrot wp砤ty got體kowej zwyk砮j</option>'+
-                    '<option value=19>Zwrot wp砤ty got體kowej US</option>'+
-                    '<option value=21>Polecenie zap砤ty</option><option value=22>Obci笨enie czekiem got體kowym</option><option value=22>Obci笨enie czekiem rozliczeniowym</option>'+
+        cols += '<td type="col"><select type="text" class="export Message custom-select" name="Message" style="width:110"><option value=11>Przelew przychodz膮cy</option>'+
+                    '<option value=11>Uznanie czekiem rozliczeniowym</option><option value=11>Wp艂ata got贸wkowa zwyk艂a</option><option value=11>Wp艂ata got贸wkowa US</option>'+
+                    '<option value=11>Przelew przychodz膮cy SORBNET</option>'+
+                    '<option value=19>Zwrot przelewu</option><option value=19>Zwrot uznania czekiem rozliczeniowym</option><option value=19>Zwrot wp艂aty got贸wkowej zwyk艂ej</option>'+
+                    '<option value=19>Zwrot wp艂aty got贸wkowej US</option>'+
+                    '<option value=21>Polecenie zap艂aty</option><option value=22>Obci膮偶enie czekiem got贸wkowym</option><option value=22>Obci膮偶enie czekiem rozliczeniowym</option>'+
                     '</select><div class="MessageDiv"></div></td>';
         cols += '<td type="col"><input type="text" class="export Date" name="Date" style="width:90"/><div class="DateDiv"></div></td>';
         cols += '<td type="col"><input type="text" class="export Amount" name="Amount" style="width:100"/><div class="AmountDiv"></div></td>';
